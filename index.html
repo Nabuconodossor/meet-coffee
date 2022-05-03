@@ -1,0 +1,149 @@
+<!-- 1.-    Competencias
+    => Reconocer que es HTML, su estrucura, alcance y caracteristicas.-
+    => Rmplementar la esructura assets del proyeco (imagenes y archivos css), utilizando rutas locales, absolutas y/o CDN, de acuerdo a las buenas practicas de la industria -->
+
+<!-- 1.1.- Crear paginas con HTML
+    =>  Emplear adecuadamente la estructura y sintaxis de las eiquetas de un documento HTML, para dar solucion a una problematica -->
+
+<!-- pagina web (Web page) documento que puede ser visto a traves de un navegador como firefox, google chrome o safari - estas estan construidas en un lenguaje de etiquetas llamado HTML -->
+
+<!-- CONTENIDO Y FORMATO -->
+
+<!-- ETIQUETA HEAD (titulo codificacion y metadatos) -->
+
+<!-- Por lo general se encuentra la etiquete <title> "para el titiulo de la pagina" <meta>"la codificacion" <link rel="shortcuticon">-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- CODIFICACION -->
+
+    <!-- <meta><meta/> la etiqueta meta con el atributo charset especifica la codificacion de los caracteres del documento por lo gral "utf-8" -->
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- AUTHOR -->
+    <!-- <meta name="author"> para el author de la pagina -->
+
+    <meta name="Gabriel Rodriguez" />
+
+    <!-- DESCRIPCION -->
+
+    <meta
+      name="Para el entrenamiento de habilidades en desarrollo de paginas web"
+    />
+
+    <!-- KEYWORDS !!IMPORTANTE PARA BUSCADORES!! -->
+
+    <meta name="traino" />
+
+    <!-- FAVICON  -->
+
+    <!-- Pequeña imagen asociada al sitio web que se muestra en la pestaña correspondiente con la etiqueta <link> con la correspondiente ubicacion del elemento y sus atributos caracteristicos -->
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/img/favicon/mummy (1).ico"
+    />
+
+    <!-- TITULO -->
+
+    <!-- <title><title/>La etiqueta titulo muestra el titulo de la pagina web en el tab  -->
+
+    <title>Mummy</title>
+  </head>
+  <body>
+    <!-- BODY -->
+    <!-- Elemento basico en ña estructura de HTML contiene todos los elementos que se representan de forma visible al visitante de la pagina web. Esta compuesto por las siguientes etiquetas-->
+
+    <!-- PARRAFOS -->
+    <!-- Son representados por el elemento <p><p/>. se considera parrafo a aquellos bloques de texto compuesto por una o mas oraciones de un tema en particular normalmente se separa de otros bloques de texto -->
+
+    <p>
+      Antiguamente la universidad era el unico lugar de calidad para aprender a
+      desarrollar tus talentos. Con eso bastaba. Hoy no es asi, en realidad en
+      la actualidad un titulo universitario es muy util pero no determinante a
+      la hora de conseguir un empleo. Esto es un efecto de la era digital
+    </p>
+
+    <!-- CONSIDERACIONES DE LOS PARRAFOS -->
+    <!-- Aagrega automaticamente un espacio antes y despues de cualquier parrafo (margenes agregados por el navegador) -->
+    <!-- Si un usuario agrega varios espacios, el navegador lo reduce a un solo espacio -->
+    <!-- si un usuario agrega varias lineas, el navegador la reduce a una sola linea -->
+
+    <!-- ENCABEZADOS -->
+    <!-- tienen mayor gerarquia que los parrafos -->
+    <!-- siendo el <h1> el encabezado con mayor gerarquia veremos hasta el h6 -->
+
+    <h1>!ESTO ES EL CAREBELA¡ (ENCABEZADO CON MAYOR RANGO)</h1>
+
+    <!-- IMAGENES -->
+    <!-- A diferencia de las dos etiquetas anteriores esta etiqueta no tiene cierre y tiene dos parametros fundamentales-->
+    <!-- src = del ingles Source, hace referencia al archivo de origen. Este, puede ser una URL o una ruta a nuetro proyecto local. -->
+    <!-- alt = del ingles alternative, se refiere a los motores de busqueda codificaran tu imagen a traves de ese texto. Tambien, si la imagen no se encuentra, mostrara el texto en vez de ella -->
+
+    <img src="./assets/img/piratesway.jpg" alt="barco siguiendo la luna" />
+
+    <!-- LISTAS -->
+    <!-- utilizaremos las etiquetas <ul>, <ol>  y <li>-->
+
+    <!-- UL -->
+    <!-- significa unordered list y la usaremos cuando tengamos que hacer un listado de elementos sin un orden particular. -->
+
+    <!-- OL -->
+    <!-- signifuca ordered list y como su nombre lo indica, lo utilizaremos cuando necesitemos tener una lista de elementos ordenados o enumerados -->
+
+    <!-- LI -->
+    <!-- significa list item y es un elemento de la lista de cualquiera de los dos tipos, ordenada o desordenada -->
+
+    <h1>Listas ordenadas y no ordenadas</h1>
+
+    <h2>lista de supermercado</h2>
+    <ul>
+      <li>cañones</li>
+      <li>polvora</li>
+      <li>algodon</li>
+      <li>municiones</li>
+    </ul>
+
+    <h2>animales favoritos</h2>
+
+    <ol>
+      <li>gato</li>
+      <li>dogo</li>
+      <li>ornitorrinco</li>
+      <li>raton</li>
+    </ol>
+    <!-- LINKS -->
+    <!-- Permiten enlazar la pagina -sitios diferentes -otras paginas de nuestro sitio -archivos - secciones dentro de la misma pagina -->
+
+    <a href="https://www.w3schools.com" target="_blank"
+      >Aprende mas sobre desarrollo web en W3Schools</a
+    >
+
+    <!-- links a paginas dentro de nuetro sitio -->
+
+    <a href="index.html">Link a la pagina principal del proyecto</a>
+
+    <!-- Imagenes con links -->
+    <!-- escribirimos la etiqueta <a>, con su atributo href dirigiendo a Google, como es un enlace a un sitio externo le daremos el tributo target="_blank" -->
+    <!-- Luego en el mismo Google buscamos el logo de Google y generamos la etiqueta <img> con sus atributos src y alt, dentro del contenido de la etiqueta <a> -->
+
+    <a href="https://www.google.cl" target="_blank"><img src="http://as01.epimg.net/betech/imagenes/2018/10/29/portada/1540844638_585946_1540848919_noticia_normal.jpg"alt="Google"/></a>
+
+    <!-- MENU -->
+    <!-- ya hemos conocido las listas y los links, el menu por su parte, representa una barra representada por una lista no ordenada de elementos (<li>) y se utiliza para menus contextuales, barras de herramientas y para enumeras controles y comandos de formularios -->
+
+    <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="pagina1.html">Pagina</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    
+  </body>
+</html>
